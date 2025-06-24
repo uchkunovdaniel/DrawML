@@ -246,6 +246,9 @@ window.onload = () => {
     $canvas.addEventListener("mousedown", (e) => mouseDown(e));
     $canvas.addEventListener("mousemove", (e) => mouseMoved(e));
 
+    $canvas.addEventListener("touchstart", (e) => mouseDown(e));
+    $canvas.addEventListener("touchmove", (e) => mouseMoved(e));
+
     $submit.addEventListener("click", () => predict($canvas));
     $clear.addEventListener("click", clearCanvas);
 };
